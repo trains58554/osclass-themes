@@ -1,28 +1,32 @@
 <?php
 
-    function add_logo_header() {
-         $html = '<img border="0" alt="' . osc_page_title() . '" src="' . osc_current_web_theme_url('images/logo.jpg') . '">';
-         $js   = "<script>
-                      $(document).ready(function () {
-                          $('#logo').html('".$html."');
-                      });
-                  </script>";
+    if( !function_exists('add_logo_header') ) {
+        function add_logo_header() {
+             $html = '<img border="0" alt="' . osc_page_title() . '" src="' . osc_current_web_theme_url('images/logo.jpg') . '">';
+             $js   = "<script>
+                          $(document).ready(function () {
+                              $('#logo').html('".$html."');
+                          });
+                      </script>";
 
-         if( file_exists( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) {
-            echo $js;
-         }
+             if( file_exists( WebThemes::newInstance()->getCurrentThemePath() . "images/logo.jpg" ) ) {
+                echo $js;
+             }
+        }
+        
+        osc_add_hook("header", "add_logo_header");
     }
 
-    osc_add_hook("header", "add_logo_header");
+    if ( !function_exists('bcute_admin_menu') ) {
+        function bcute_admin_menu() {
+            echo '<h3><a href="#">' . __('BCute theme', 'bcute') .'</a></h3>
+            <ul>
+                <li><a href="' . osc_admin_render_theme_url('oc-content/themes/bcute/admin/admin_settings.php') . '">&raquo; '.__('Settings theme', 'bcute') . '</a></li>
+            </ul>';
+        }
 
-    function bcute_admin_menu() {
-        echo '<h3><a href="#">' . __('BCute theme', 'bcute') .'</a></h3>
-        <ul>
-            <li><a href="' . osc_admin_render_theme_url('oc-content/themes/bcute/admin/admin_settings.php') . '">&raquo; '.__('Settings theme', 'bcute') . '</a></li>
-        </ul>';
+        osc_add_hook('admin_menu', 'bcute_admin_menu');
     }
-
-    osc_add_hook('admin_menu', 'bcute_admin_menu');
 
     if( !function_exists('meta_title') ) {
         function meta_title( ) {
