@@ -122,5 +122,6 @@
             </div>
         </div>
         <?php osc_show_flash_message() ; ?>
+        <?php osc_run_hook('footer') ; ?>
     </body>
 </html>
