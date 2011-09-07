@@ -1,0 +1,54 @@
+/* Custom CSS */
+.container.margin-top-10 { margin-top: 10px; }
+/* HEADER */
+div.topbar-wrapper { position: relative; height: 40px; margin: 5px 0 0; }
+div.topbar-wrapper div.topbar { position: absolute; margin: 0 -20px; }
+div.topbar-wrapper div.topbar .fill { padding-left: 20px; padding-right: 20px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.logo h3 { font-size: 4em; }
+.logo h3 a, .logo h3:hover { text-decoration: none; color: #404040; }
+.row.login_nav { text-align: right; margin-bottom:0px; margin-top: 10px; }
+.row.login_nav ul { margin-bottom: 5px; }
+.login_nav ul li { display: inline; position: relative; }
+.login_nav ul li.languages a.active { background:url(../images/language_arrow.gif) no-repeat right center; padding-right:10px !important; }
+.login_nav ul li.languages ul { position: absolute; right: 0; display: none; }
+.login_nav ul li.languages ul li { border-top:1px dotted #DDD; border-right:none; display:block; padding:2px 12px; width:100px; position:static; }
+.login_nav ul li.languages ul li.first { border:none; margin-top: -2px; }
+.topbar .fill { background: #2cabe6; background-color: #2cabe6; background-image: -khtml-gradient(linear, left top, left bottom, from(#2b92c2), to(#2cabe6)); background-image: -moz-linear-gradient(top, #2b92c2, #2cabe6); background-image: -ms-linear-gradient(top, #2b92c2, #2cabe6); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2b92c2), color-stop(100%, #2cabe6)); background-image: -webkit-linear-gradient(top, #2b92c2, #2cabe6); background-image: -o-linear-gradient(top, #2b92c2, #2cabe6); background-image: linear-gradient(top, #2b92c2, #2cabe6); }
+.topbar ul li ul { background-color: #2b92c2; z-index: 1; }
+.topbar a, .topbar ul li ul li a { color: white; }
+.topbar ul li.active a { background-color: #268FBF; }
+.topbar ul li.publish a { font-weight: 600; }
+.search-line { width: 980px; margin: 0 auto; border-top: 1px solid #CCCCCC; }
+/* SEARCH */
+.search input, .search select, .search button, .search .chzn-container { float: left; margin: 0 2px; }
+.chzn-container .chzn-results { clear: left; }
+.search .publish { margin-bottom: 18px;	padding-top: 18px; text-align: right; }
+.row.search { margin-bottom: 0px; }
+/* FOOTER */
+.footer-line { width: 980px; margin: 0 auto; border-top: 1px solid #CCCCCC; }
+.container.footer { margin-top: 10px; }
+/* MAIN PAGE */
+.latest_ads.container { margin-top: 10px; }
+.latest_ads.container h1 { border-bottom: 1px dotted #cccccc; padding-bottom: 5px; margin-bottom: 10px; }
+.latest_ads.container h2 { font-size: 14px; line-height: 18px }
+.latest_ads.container p { margin-bottom: 0px; }
+.latest_ads.container p.gray { color: #BFBFBF; }
+.latest_ads.container .photo { margin-top: 10px; width: 100px; float: left; display: inline; }
+.latest_ads.container .description { display: inline; width: 600px; }
+.latest_ads.container .line { border-bottom: 1px dotted #cccccc; margin-bottom: 10px; padding-bottom: 10px; }
+.latest_ads.container .show-all-ads { text-align: right; font-size: 14px; }
+/* CONTACT */
+.contact { width: 600px; margin: 25px auto; }
+.contact .well { padding-bottom: 0; }
+.contact .actions, .contact fieldset, .contact form { margin-bottom: 0px; }
+.inline-help.padding-top { padding-top: 6px; line-height: 18px; float: left; }
+/* USER */
+.container.user { margin-top: 20px; }
+.container.user  p { margin-bottom: 0px; }
+.container.user .item-alert h6 { line-height: 8px; }
+/* ITEM */
+.modal form { padding-left: 0px; margin-bottom: 0px; }
+.item-contact.modal { width:320px; margin: -280px 0 0 -120px; }
+.item-contact input.xlarge, .item-contact textarea.xlarge { width: 260px; }
+.item-detail h1 { font-size: 20px; border-bottom: 1px dotted #CCCCCC; }
+.item-detail h1 small { font-size: 16px; }
